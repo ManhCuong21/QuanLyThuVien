@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.DoanhThuFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:hint="Từ ngày (dd/MM/yyyy)"
+        android:layout_marginTop="30dp"
+        android:textColorHint="@color/pink"
+        app:startIconDrawable="@drawable/ic_calendar_today_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/edtNgayDauDoanhThu"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:maxLines="1"
+            android:inputType="text"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:imeOptions="actionNext"
+            android:textSize="20dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <ImageView
+        android:id="@+id/calendarNgayDauDoanhThu"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/calendar"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
+        app:layout_constraintTop_toTopOf="@+id/textInputLayout" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="30dp"
+        android:hint="Đến ngày (dd/MM/yyyy)"
+        android:textColorHint="@color/pink"
+        app:startIconDrawable="@drawable/ic_calendar_today_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+        <EditText
+            android:id="@+id/edtNgayCuoiDoanhThu"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:maxLines="1"
+            android:inputType="text"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/calendarNgayCuoiDoanhThu"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/calendar"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textInputLayout2"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"
+        app:layout_constraintTop_toTopOf="@+id/textInputLayout2" />
+
+    <Button
+        android:id="@+id/btnDoanhThu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button_bg_pink"
+        android:text="$ DoanhThu"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+    <TextView
+        android:id="@+id/tvDoanhThu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textSize="30sp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDoanhThu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

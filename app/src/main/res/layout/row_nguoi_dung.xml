@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row_nguoi_dung"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_row"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:backgroundTint="@color/pink"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvTenNguoiDung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên người dùng"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:layout_margin="15sp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="Tên đăng nhập:"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvTenDangNhapNguoiDung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"
+                android:text="tên đăng nhập"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="Mật khẩu:"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvMatKhauNguoiDung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"
+                android:text="mật khẩu"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="end">
+        <ImageView
+            android:id="@+id/btnDeleteNguoiDung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_clear_24"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+</LinearLayout>

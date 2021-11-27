@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.duanmau">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DuAnMau">
+        <activity android:name=".Activity.ThemMoiNguoiDungActivity"></activity>
+        <activity android:name=".Activity.NguoiDungActivity" />
+        <activity android:name=".Activity.DoanhThuActivity" />
+        <activity android:name=".Activity.ThongKeActivity" />
+        <activity android:name=".Activity.DoiMatKhauActivity" />
+        <activity android:name=".Activity.ThemMoiPhieuMuonActivity" />
+        <activity android:name=".Activity.PhieuMuonActivity" />
+        <activity android:name=".Activity.ThemMoiThanhVienActivity" />
+        <activity android:name=".Activity.ThanhVienActivity" />
+        <activity android:name=".Activity.ThemMoiSachActivity" />
+        <activity android:name=".Activity.TheLoaiActivity" >
+
+        </activity>
+        <activity android:name=".Activity.ThemMoiTheLoaiActivity" />
+        <activity android:name=".Activity.SachActivity" />
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Activity.IntroductoryActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.MainActivity" />
+    </application>
+
+</manifest>
